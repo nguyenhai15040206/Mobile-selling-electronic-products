@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.AccountFragment">
+
+    <LinearLayout
+        android:id="@+id/relativeTopAccNo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="10"
+        android:background="@color/backgroundAcount"
+        android:minHeight="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:theme="?attr/actionBarTheme"
+        tools:ignore="MissingConstraints">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarLogin"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+        <ImageView
+            android:id="@+id/btnLogoutAccount"
+            android:layout_weight="1"
+            android:padding="7dp"
+            android:src="@drawable/ic_baseline_settings_24"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <ImageView
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:id="@+id/ImgCartViewAccount"
+            android:layout_width="0dp"
+            android:src="@drawable/ic_baseline_shopping_cart_24_w"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/backgroundAcount"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_NoAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Chào mừng bạn đến với HUFI - ITTC Shop!"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnLoginOrRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:backgroundTint="@color/white"
+                android:text="Đăng Nhập/Tạo Tài Khoản"
+                android:textAllCaps="false"
+                android:textColor="@color/mauNau"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewLogin"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            app:cardCornerRadius="60dp">
+
+            <ImageView
+                android:id="@+id/ImgInfomationCusotmerAcc"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/avatar" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNameCustomerLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nguyễn ..."
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvPhoneNumberCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Nguyễn ..."
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/backgroundAcount">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đơn hàng của tôi"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="XEM LỊCH SỬ"
+            android:textColor="@color/blue_theme"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/row_1"
+                app:cardCornerRadius="90dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp">
+                <ImageButton
+                    android:id="@+id/btnChoXacNhan"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_baseline_mark_email_read_24"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                android:textColor="@color/mauNau"
+                android:text="Chờ xác nhận"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/row_1"
+                app:cardCornerRadius="90dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp">
+                <ImageButton
+                    android:id="@+id/btnChoLayHang"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_baseline_verified_24"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                android:textColor="@color/mauNau"
+                android:text="Chờ lấy hàng"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/row_1"
+                app:cardCornerRadius="90dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp">
+                <ImageButton
+                    android:id="@+id/btnDangGiaoHang"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_baseline_local_car_wash_24"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                android:textColor="@color/mauNau"
+                android:text="Đang giao"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/row_1"
+                app:cardCornerRadius="90dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp">
+                <ImageButton
+                    android:id="@+id/btnDaThanhToan"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_baseline_model_training_24"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                android:textColor="@color/mauNau"
+                android:text="Đã giao"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="10dp"
+        android:background="@color/mauNau"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/ngoisao"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/blue_theme"
+                android:text="Luôn luôn ủng hộ shop nha\nCảm ơn mọi người !"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

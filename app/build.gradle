@@ -1,0 +1,89 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.example.banhangonline"
+        minSdkVersion 26
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'androidx.mediarouter:mediarouter:1.2.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:26.1.0'
+
+    implementation 'com.google.android.material:material:1.1.0'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+
+    implementation 'com.etebarian:meow-bottom-navigation-java:1.2.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.google.code.gson:gson:2.6.1'
+
+    implementation 'com.squareup.retrofit2:converter-scalars:2.4.0'
+
+    //library glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //
+    implementation 'me.relex:circleindicator:2.1.4'
+
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    //user Material Design
+    implementation 'com.google.android.material:material:1.0.0'
+
+    // palatte
+    implementation 'androidx.palette:palette:1.0.0'
+    implementation 'me.gujun.android.taggroup:library:1.4@aar'
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.0.6'
+    implementation 'com.github.hajiyevelnur92:intentanimation:1.0'
+
+    implementation 'q.rorbin:VerticalTabLayout:1.2.7'
+    compile 'q.rorbin:badgeview:1.1.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+
+}

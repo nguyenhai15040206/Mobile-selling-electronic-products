@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:background="@drawable/custom_dialog_paycart"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:background="@drawable/bg_corner_topleftright"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/aaaaaaaaa"
+            android:text="Vui lòng kiểm tra lại thông tin nhận hàng"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_weight="9.3"
+            android:layout_width="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"/>
+        <ImageButton
+            android:layout_weight="0.7"
+            android:id="@+id/btncloseWindow"
+            android:background="@drawable/ic_baseline_highlight_off_24"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Họ tên"
+            android:textColor="@color/mauNau"
+            android:textSize="13sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:errorEnabled="false"
+            android:id="@+id/txtNameCustomerCartLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/txtNameCustomerCart"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:textColor="@color/mauNau"
+                android:textSize="12sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:text="Số điện thoại"
+            android:textColor="@color/mauNau"
+            android:textSize="13sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtPhoneNumberCartLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                app:errorEnabled="false"
+                android:id="@+id/txtPhoneNumberCart"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:textColor="@color/mauNau"
+                android:textSize="12sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:text="Email"
+            android:textColor="@color/mauNau"
+            android:textSize="13sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/txtEmailCartLayout"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/txtEmailCart"
+                app:errorEnabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/mauNau"
+                android:textSize="12sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Địa chỉ giao hàng"
+            android:textColor="@color/mauNau"
+            android:textSize="13sp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/txtCustomerAddressCartLayout"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp">
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/txtCustomerAddressCart"
+                app:errorEnabled="false"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/mauNau"
+                android:textSize="12sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <CheckBox
+            android:enabled="false"
+            android:button="@drawable/checkbox_checked_change"
+            android:checked="true"
+            android:textColor="@color/mauNau"
+            android:buttonTint="@color/backgroundAcount"
+            android:text="Thanh toán sau khi nhận sản phẩm"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_height="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:id="@+id/btnYesPayment"
+            android:background="@drawable/custom_btn_thanhtoan"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="Thanh toán"
+            android:layout_height="45dp"/>
+    </LinearLayout>
+</LinearLayout>

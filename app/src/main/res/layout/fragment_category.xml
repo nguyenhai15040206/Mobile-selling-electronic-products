@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context=".Fragment.CategoryFragment">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLay"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <FrameLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <q.rorbin.verticaltablayout.VerticalTabLayout
+                android:id="@+id/tablayoutCategories"
+                android:layout_width="100dp"
+                app:tab_mode="scrollable"
+                app:indicator_gravity="left"
+                app:tab_height="120dp"
+                app:indicator_color="@color/backgroundAcount"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/tablayout"
+                app:tabIndicatorFullWidth="true">
+
+            </q.rorbin.verticaltablayout.VerticalTabLayout>
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/appBarLay">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpaggerCategories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.viewpager.widget.ViewPager>
+    </LinearLayout>
+
+
+</RelativeLayout>

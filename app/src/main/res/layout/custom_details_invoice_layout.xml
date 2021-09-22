@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/custom_dialog_soluong"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="Danh sách sản phẩm"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_corner_topleftright"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:id="@+id/rcvDialogProductManager"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOKdiaLogPromanager"
+        android:layout_width="match_parent"
+        android:text="OK"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_btn_thanhtoan"
+        android:layout_height="30dp"/>
+</LinearLayout>

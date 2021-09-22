@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SpecificationsLatopActivity">
+    <RelativeLayout
+        android:id="@+id/relativeTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:ignore="MissingConstraints">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarLaptopCT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/white"
+            app:navigationIcon="@drawable/ic_baseline_close_24"
+            app:title="Thông tin chi tiết"
+            android:background="@color/backgroundAcount"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvNameProductLaptopTTCT"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:textSize="22sp"
+        android:textColor="@color/com_facebook_blue"
+        android:gravity="left"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:text="Laptop Aus TUF FX506LIHN039T I5 10300H/8GB/512GB SSD/Win10" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content">
+            <TableRow android:background="@color/row_1"
+                android:layout_height="60dp">
+                <TextView
+
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="60dp"
+                    android:minWidth="140dp"
+                    android:width="110dp"
+                    android:layout_weight="1"
+                    android:text="Màn hình" />
+
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvScreenLatopTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:maxWidth="280dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="6.1',Liquid retina HD, ÍP LCD, 828 x 1792 Pixcel" />
+            </TableRow>
+            <TableRow android:background="@color/row_2"
+                android:layout_height="50dp">
+                <TextView
+                    android:minWidth="140dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="CPU"
+                    />
+                <TextView
+                    android:minWidth="140dp"
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvCPULaptopTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Intel Core i5-10th-gen"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_1"
+                android:layout_height="60dp">
+                <TextView
+                    android:minWidth="140dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="RAM"
+                    />
+                <TextView
+                    android:minWidth="140dp"
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvRAMLaptopTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="16 GB, LPDDR4"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_1"
+                android:layout_height="50dp">
+                <TextView
+                    android:minWidth="140dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="Đồ họa"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvGrapicsLaptopTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Apple M1"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_2"
+                android:layout_height="50dp">
+                <TextView
+                    android:minWidth="140dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="Hệ điều hành"
+                    />
+                <TextView
+                    android:minWidth="140dp"
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvOperatingSysLaptopTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Mac OS"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_1"
+                android:layout_height="50dp">
+                <TextView
+                    android:minWidth="140dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="Trọng lượng"
+                    />
+                <TextView
+                    android:minWidth="140dp"
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvWeightLaptopTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="1.4"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_2"
+                android:layout_height="50dp">
+                <TextView
+                    android:minWidth="140dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="Kích thước"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvSizeLaptopTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="304.1 x 212.4 x 4.1"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_1"
+                android:layout_height="50dp">
+                <TextView
+                    android:minWidth="140dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="Xuất xứ"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvMadInLaptopTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Trung Quốc"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_2"
+                android:layout_height="50dp">
+                <TextView
+                    android:minWidth="140dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:text="Thời gian ra mắt"
+                    />
+
+                <TextView
+                    android:id="@+id/tvDateOfManufactureLaptopTTCT"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="1/9/2019"
+                    android:textColor="@color/black" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

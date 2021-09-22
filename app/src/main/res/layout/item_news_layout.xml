@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="10dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgNews"
+        android:scaleType="fitXY"
+        android:src="@color/backgroundAcount"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+    <TextView
+        android:id="@+id/tvNewsName"
+        android:textSize="16sp"
+        android:textColor="@color/mauNau"
+        android:text="Xiaomi Redmi K50 với chip Snapdragon 895 sẽ ra mắt trước tháng 2/2022"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:text="Nội dụng:"
+        android:textColor="@color/mauNau"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvNewNoiDung"
+        android:layout_marginTop="2dp"
+        android:text="Những chiếc laptop mỏng nhẹ sẽ là người bạn đồng hành nằm trong balo của các cô cậu sinh viên trong suốt những ngày trên giảng đường và kể cả sau khi tốt nghiệp đi làm."
+        android:textSize="15sp"
+        android:textColor="@color/mauNau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvNgayDang"
+        android:textColor="@color/mauNau"
+        android:text="Ngày đăng: 2021-07-07"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

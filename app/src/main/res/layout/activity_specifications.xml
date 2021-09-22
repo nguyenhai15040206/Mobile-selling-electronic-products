@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SpecificationsActivity">
+   <RelativeLayout
+       android:id="@+id/relativeTop"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/gray"
+       android:minHeight="?attr/actionBarSize"
+       android:theme="?attr/actionBarTheme"
+       tools:ignore="MissingConstraints">
+       <androidx.appcompat.widget.Toolbar
+           android:id="@+id/toolbaCater"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:titleTextColor="@color/white"
+           app:navigationIcon="@drawable/ic_baseline_close_24"
+           app:title="Thông tin chi tiết"
+           android:background="@color/backgroundAcount"
+           android:minHeight="?attr/actionBarSize"
+           android:theme="?attr/actionBarTheme" />
+   </RelativeLayout>
+    <TextView
+        android:id="@+id/tvNameProductTTCT"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:textSize="24sp"
+        android:textColor="@color/com_facebook_blue"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Iphone 12 pro max 164GB" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content">
+            <TableRow android:background="@color/row_1"
+                android:layout_height="50dp">
+                <TextView
+                    android:minWidth="140dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Màn hình" />
+
+                <TextView
+                    android:maxWidth="280dp"
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvScreenTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="6.1',Liquid retina HD, ÍP LCD, 828 x 1792 Pixcel" />
+            </TableRow>
+            <TableRow android:background="@color/row_2"
+                android:layout_height="50dp">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Camera sau"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvCameraSauTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="12.0 MP"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_1"
+                android:layout_height="50dp">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Camera selfie"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvCameraSelfiTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="7.0 MP"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_2"
+                android:layout_height="50dp">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="RAM"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvRAMTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="4GB"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_1"
+                android:layout_height="50dp">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Bộ nhớ trong"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvInternalMemoryTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="64 GB"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_2"
+                android:layout_height="50dp">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="CPU"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvCPUTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="A12 Bionic"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_1"
+                android:layout_height="50dp">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="GPU"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvGPUTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Apple GPU 4 nhân"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_2"
+                android:layout_height="50dp">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Dung lượng pin"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvPinTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="3110 mAh"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_1"
+                android:layout_height="50dp">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Thẻ sim"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvSIMTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="2,1 eSIM, 1 Nano SIM"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_2"
+                android:layout_height="50dp">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Hệ điều hành"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvOperatingSysTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="iOS 14"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_1"
+                android:layout_height="50dp">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Xuất xứ"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvMadeInTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Trung Quốc"
+                    />
+            </TableRow>
+            <TableRow android:background="@color/row_2"
+                android:layout_height="50dp">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Thời gian ra mắt"
+                    />
+                <TextView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/tvDateOfManufactureTTCT"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_height="match_parent"
+                    android:text="1/9/2019"
+                    android:layout_weight="1"
+                    />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

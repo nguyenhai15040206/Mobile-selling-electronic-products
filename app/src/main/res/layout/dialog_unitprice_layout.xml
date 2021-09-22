@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/custom_dialog_soluong"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:background="@drawable/topleft_sluong"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvEnventoryNumber"
+            android:text="Số lượng mặt hàng này tối đa là 12 sản phẩm"
+            android:textSize="15sp"
+            android:textColor="@color/mauNau"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:background="@color/mauNau"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"></View>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOKDialog"
+        android:text="ok"
+        android:textColor="@color/mauNau"
+        android:background="@drawable/bottomleft_soluong"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+</LinearLayout>

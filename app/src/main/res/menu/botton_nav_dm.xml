@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/phone"
+        android:icon="@drawable/ic_baseline_smartphone_24"
+        android:title="Điện thoại" />
+    <item
+        android:id="@+id/lap"
+        android:icon="@drawable/ic_baseline_laptop_mac_24"
+        android:title="Lap Top" />
+
+    <item
+        android:id="@+id/apple"
+        android:icon="@drawable/ic_baseline_phone_iphone_24"
+        android:title="Apple" />
+    <item
+        android:id="@+id/ipad"
+        android:icon="@drawable/ic_baseline_tablet_24"
+        android:title="Ipad" />
+    <item
+        android:id="@+id/phuKien"
+        android:icon="@drawable/ic_baseline_battery_charging_full_24"
+        android:title="Phụ kiện" />
+</menu>

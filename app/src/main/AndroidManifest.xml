@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.banhangonline">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ngoisao"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ngoisao"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BanHangOnline"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.AccessoriesActivity"></activity>
+        <activity android:name=".Activity.OderManagerActivity" />
+        <activity android:name=".Activity.SearchActivity" />
+        <activity android:name=".Activity.InfomationCustomerActivity" />
+        <activity android:name=".Activity.SpecificationsLatopActivity" />
+        <activity android:name=".Activity.LaptopDetailsActivity" />
+        <activity android:name=".Activity.CreateAcccountActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.PhoneDetailsActivity" />
+        <activity android:name=".Activity.SpecificationsActivity" />
+        <activity android:name=".Activity.ProductsByCategoryActivity" />
+        <activity android:name=".Activity.CartActivity" />
+        <activity android:name=".Activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MainActivity" />
+    </application>
+
+</manifest>
